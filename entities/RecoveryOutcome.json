@@ -1,1 +1,38 @@
-{"name":"RecoveryOutcome","type":"object"}
+{
+  "name": "RecoveryOutcome",
+  "type": "object",
+  "properties": {
+    "session_id": {
+      "type": "string"
+    },
+    "decision_id": {
+      "type": "string"
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "amount_recovered": {
+      "type": "number"
+    },
+    "time_to_recovery_hours": {
+      "type": "number"
+    },
+    "recovery_method": {
+      "type": "string",
+      "enum": [
+        "automatic_retry",
+        "customer_action",
+        "manual_intervention",
+        "payment_method_update"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "session_id",
+    "decision_id",
+    "success"
+  ]
+}
