@@ -1,0 +1,1 @@
+// AIAuditor — AI decision audit + LLM-generated audit report
