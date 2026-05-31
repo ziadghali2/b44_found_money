@@ -1,0 +1,1 @@
+// AppLayout — Sidebar shell + <Outlet>
