@@ -1,1 +1,49 @@
-{"name":"RecoverySession","type":"object"}
+{
+  "name": "RecoverySession",
+  "type": "object",
+  "properties": {
+    "stripe_payment_id": {
+      "type": "string"
+    },
+    "customer_email": {
+      "type": "string"
+    },
+    "customer_name": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "currency": {
+      "type": "string",
+      "default": "USD"
+    },
+    "failure_code": {
+      "type": "string"
+    },
+    "failure_message": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "analyzing",
+        "action_sent",
+        "recovered",
+        "failed",
+        "expired"
+      ]
+    },
+    "payment_date": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "stripe_payment_id",
+    "amount",
+    "failure_code",
+    "status"
+  ]
+}
