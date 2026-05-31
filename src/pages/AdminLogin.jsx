@@ -1,0 +1,1 @@
+// AdminLogin — Secondary admin auth gate (sessionStorage)
