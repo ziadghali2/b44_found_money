@@ -1,1 +1,46 @@
-{"name":"AIDecision","type":"object"}
+{
+  "name": "AIDecision",
+  "type": "object",
+  "properties": {
+    "session_id": {
+      "type": "string"
+    },
+    "action_type": {
+      "type": "string",
+      "enum": [
+        "retry_payment",
+        "send_nudge",
+        "update_payment_method",
+        "wait_and_retry",
+        "escalate"
+      ]
+    },
+    "predicted_window": {
+      "type": "string"
+    },
+    "confidence_score": {
+      "type": "number"
+    },
+    "reasoning": {
+      "type": "string"
+    },
+    "prompt_version": {
+      "type": "string",
+      "default": "v1.0"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "executed",
+        "completed"
+      ],
+      "default": "pending"
+    }
+  },
+  "required": [
+    "session_id",
+    "action_type",
+    "reasoning"
+  ]
+}
