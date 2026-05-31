@@ -1,0 +1,62 @@
+[
+  {
+    "recovery_method": "payment_method_update",
+    "notes": "",
+    "decision_id": "6a082dbbf9c86f273ed34d18",
+    "success": true,
+    "session_id": "6a082da8f9c86f273ed34d0e",
+    "amount_recovered": 67,
+    "time_to_recovery_hours": 10,
+    "id": "6a131c620db6d92f5db01124",
+    "created_date": "2026-05-24T15:42:26.594000",
+    "updated_date": "2026-05-24T15:42:26.594000",
+    "created_by_id": "6a082c9ef9c86f273ed34caf",
+    "created_by": "deeplearningexp20@gmail.com",
+    "is_sample": false
+  },
+  {
+    "recovery_method": "automatic_retry",
+    "notes": "Payment succeeded on second retry after 3.5 hours",
+    "decision_id": "placeholder1",
+    "success": true,
+    "session_id": "6a082da8f9c86f273ed34d0a",
+    "amount_recovered": 1250,
+    "time_to_recovery_hours": 3.5,
+    "id": "6a082dbbf9c86f273ed34d12",
+    "created_date": "2026-05-16T08:41:31.028000",
+    "updated_date": "2026-05-16T08:41:31.028000",
+    "created_by_id": "6a082c9ef9c86f273ed34caf",
+    "created_by": "deeplearningexp20@gmail.com",
+    "is_sample": false
+  },
+  {
+    "recovery_method": "customer_action",
+    "notes": "Customer updated payment method after WhatsApp nudge",
+    "decision_id": "placeholder2",
+    "success": true,
+    "session_id": "6a082da8f9c86f273ed34d0e",
+    "amount_recovered": 349,
+    "time_to_recovery_hours": 36,
+    "id": "6a082dbbf9c86f273ed34d13",
+    "created_date": "2026-05-16T08:41:31.028000",
+    "updated_date": "2026-05-16T08:41:31.028000",
+    "created_by_id": "6a082c9ef9c86f273ed34caf",
+    "created_by": "deeplearningexp20@gmail.com",
+    "is_sample": false
+  },
+  {
+    "recovery_method": "manual_intervention",
+    "notes": "Customer cancelled subscription after bank investigation",
+    "decision_id": "placeholder3",
+    "success": false,
+    "session_id": "6a082da8f9c86f273ed34d0d",
+    "amount_recovered": 0,
+    "time_to_recovery_hours": 0,
+    "id": "6a082dbbf9c86f273ed34d14",
+    "created_date": "2026-05-16T08:41:31.028000",
+    "updated_date": "2026-05-16T08:41:31.028000",
+    "created_by_id": "6a082c9ef9c86f273ed34caf",
+    "created_by": "deeplearningexp20@gmail.com",
+    "is_sample": false
+  }
+]
