@@ -1,0 +1,1 @@
+// AppSettings — Business identity, Stripe keys, notifications
